@@ -1,26 +1,5 @@
-# Front-end Style Guide
+Este ejercicio lo realize con más facilidad que los anteriores
 
-## Layout
+https://www.figma.com/file/XenmQTsneZxd5gBdvRaSn1/Untitled?node-id=0%3A1
 
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Dark Blue: hsl(240, 38%, 20%)
-- Grayish Blue: hsl(240, 18%, 77%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 32px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 300, 500, 700
+Para realizarlo me tomo mas tiempo hacer las sombras para que quedarán lo más parecido posible
