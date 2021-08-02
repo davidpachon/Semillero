@@ -1,0 +1,92 @@
+    body {
+    background-color: grey;
+    }   
+    
+    main{
+    display: flex;
+    width: 731;
+    height: 281;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 5%;
+    }
+
+
+    
+    aside img{
+        width: 400px;
+        height: 400px;
+        float: left;
+        flex: 40%;
+        background-size: cover;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    
+    article{
+        flex: 60%;
+        padding: 20px;
+        font-family: "manrope",sans-serif;
+    }
+    
+    .text{
+        float: right;
+        height: 326px;
+
+    }
+
+    .text h1{
+        font-weight:bold;
+        color: #525460;
+        font-size: 30px;
+    }
+    
+    .text h2{
+        font-weight:normal;
+        color: #777E88;
+        font-size: 25px;
+    }
+
+    .Michelle{
+        display: flex;
+    }
+    
+    .Michelle p1
+    {
+    display: flex;
+    font-weight:bold;
+    margin: 20px;
+    font-family: "manrope",sans-serif;
+    font-size: 20px;
+    color: #5B626C;
+    }
+
+    .Michelle p2
+    {
+    display: flex;
+    font-weight:normal;
+    margin: 25px;
+    margin-left: -170px;
+    font-family: "manrope",sans-serif;
+    font-size: 20px;
+    color: #A6ABB1;
+    }
+
+    .Michelle img{
+        width: 80px;
+        height: 80px;
+        border-radius: 1000px;
+    }
+    
+    .share img{
+        width: 55px;
+        height: 55px;
+        display: flex;
+        margin-left: 90%;
+        margin-top: -12%;
+    }
+
+    
+  
+
