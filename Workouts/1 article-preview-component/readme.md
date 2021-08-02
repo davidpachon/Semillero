@@ -7,4 +7,4 @@ Termine demorando menos de lo planeado y fue una tarea bastante divertida
 
 ---------------------------------------------------------------------------------------
 
-Para este ejercicio hice el diseño en HTML lo cual me ha cosatado un poco
+Para este ejercicio hice el diseño en HTML lo cual me ha cosatado un poco la vista de escritorio, ya continuare con la vista de celular
