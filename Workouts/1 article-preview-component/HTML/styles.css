@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;   
-    position: relative;
+    
 }   
     
 main{
@@ -75,12 +75,11 @@ article{
     display: flex;
 }
     
-.p1{
+.nombre{
     margin: 10px;
     font-family: "manrope",sans-serif;
     width: 125px;
     color: rgba(91,98,108,1);
-    position: relative;
     top: -25px;
     left: 6px;
     font-weight: Bold;
@@ -89,11 +88,10 @@ article{
     text-align: left;
 }
 
-.p2{
+.fecha{
     margin: 10px;
     font-family: "manrope",sans-serif;
     color: rgba(166,171,177,1);
-    position: relative;
     top: -5px;
     left: -140px;
     font-weight: Regular;
@@ -131,7 +129,7 @@ article{
     background-position: center;
     background-size: cover;
     opacity: 1;
-    position: relative;
+    position: absolute;
     top: 80px;
     left: -240px;
   }
@@ -141,7 +139,7 @@ article{
     height: 55px;
     background: rgba(73,85,107,1);
     opacity: 1;
-    position: relative;
+    position: absolute;
     top: -10px;
     left: 50px;
     border-top-left-radius: 5px;
@@ -157,7 +155,7 @@ article{
     background-position: center;
     background-size: cover;
     opacity: 1;
-    position: relative;
+    position: absolute;
     top: 20px;
     left: -170px;
     overflow: hidden;
@@ -166,7 +164,7 @@ article{
   .compartir_texto {
     width: 63px;
     color: rgba(143,155,177,1);
-    position: relative;
+    position: absolute;
     top: 2px;
     left: 10px;
     font-family: "Manrope", sans-serif;
@@ -221,7 +219,6 @@ article{
     main{
         width: 327px;
         height: 504px;
-        display: flex;
         margin-top: 10%;
         margin-left: 10%;
       
@@ -231,29 +228,15 @@ article{
         width: 327px;
         height: 200px;
         flex: 40%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
         border-bottom-left-radius: 0px;
-        border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        position: absolute;
-        overflow: hidden;
     }
 
     article{
         width: 300px;
         height: 100%;
-        font-family: "manrope",sans-serif;
     }
         
-    .parrafos{
-        float: left;
-        height: 326px;
-        
-    }
-    
     .parrafos h1{
         position: relative;
         left: 0px;
