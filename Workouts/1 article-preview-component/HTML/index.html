@@ -7,40 +7,80 @@
 </head>
 
 <body>
-<main>
-    <aside>
-        <img src="images/drawers.jpg">
-    </aside>
-    
-<article>
-    <div class="text">
-        <h1>
-            <p>Shift the overall look and feel by 
-            adding these wonderful touches to 
-            furniture in your home</p>
-        </h1>
-        <h2>
-            <p>been in a room and felt like something was missing? 
-                Perhaps it felt slightly bare and uninviting. I’ve got some 
-                simple tips to help you make any room feel complete.</p> 
-        </h2>
-        <br>
+    <main>
+        <aside>
+            <img src="images/drawers.jpg">
+        </aside>
 
-        <div class="Michelle">
-            <img src="images/avatar-michelle.jpg">
-            <div>
-                   <p1>Michelle Appleton</p>
-                   <p2>28 Jun 2020</p>
+        <article>
+            <div class="parrafos">
+                <h1>
+                    <p>Shift the overall look and feel by
+                        adding these wonderful touches to
+                        furniture in your home</p>
+                </h1>
+
+                <h2>
+                    <p>Ever been in a room and felt like something was missing?
+                        Perhaps it felt slightly bare and uninviting. I’ve got some
+                        simple tips to help you make any room feel complete.</p>
+                </h2>
+                <br>
+
+                <div class="perfil">
+                    <img src="images/avatar-michelle.jpg">
+
+
+                    <div class="p1">
+                        <p>Michelle Appleton</p>
+                    </div>
+                    <div class="p2">
+                        <p> 28 Jun 2020</p>
+                    </div>
+
+                    <div class="compartir">
+                        <img src="images/Share.png" id="imageng" onmouseover="cambiar()" onmouseout="cambiar2()">
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+
+    <div class="contenedor_principal" id="con1">
+        <div class="contenedor_s">
+            <div class="contenedor_bg"></div>
+        </div>
+
+        <div class="compartir_s">
+            <span class="compartir_texto">S H A R E</span>
+
+            <div class="logo_compartir_izquierda">
+                <img src="images/icon-facebook.png">
+            </div>
+            <div class="logo_compartir_centro">
+                <img src="images/icon-twitter.png">
+            </div>
+            <div class="logo_compartir_derecha">
+                <img src="images/icon-pinterest.png">
             </div>
         </div>
-        <div class="share">
-            <img src="images/Share.png">
-        </div>
-        
     </div>
-  
-</article>
-    
-</main>
+
 </body>
+
+<script>
+    function cambiar() {
+        document.getElementById("imageng").src = "images/Share2.png";
+        document.getElementById("con1").style.display = "block";
+    }
+    function cambiar2() {
+        document.getElementById("imageng").src = "images/Share.png";
+        document.getElementById("con1").style.display = "none";
+    }
+
+
+</script>
+
 </html>
