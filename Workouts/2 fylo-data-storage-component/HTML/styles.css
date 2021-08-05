@@ -3,65 +3,261 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 main {
-  width: 100%;
+  width: 1440px;
   height: 800px;
-  background: rgba(12,18,44,1);
+  background: rgba(12, 18, 44, 1);
   opacity: 1;
-  position: relative;
-  top: 0px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  overflow: hidden;
+}
+
+.fondo {
+  width: 100%;
+  height: 420px;
+  background: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 380px;
   left: 0px;
   overflow: hidden;
 }
 
-.fondo{
-    width: 100%;
-    height: 420px;
-    background: url("images/bg-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 380px;
-    left: 0px;
-    overflow: hidden;
-}
-
 .contenedor1 {
-    width: 350px;
-    height: 201px;
-    background: rgba(30,44,105,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    overflow: hidden;
-  }
-
-.contenedor2{
-        width: 540px;
-        height: 154px;
-        background: rgba(29,43,104,1);
-        opacity: 1;
-        position: absolute;
-        top: 48px;
-        left: 900px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        overflow: hidden;
+  width: 350px;
+  height: 201px;
+  background: rgba(30, 44, 105, 1);
+  opacity: 1;
+  position: absolute;
+  top: 270px;
+  left: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
+
+.contenedor2 {
+  width: 540px;
+  height: 154px;
+  background: rgba(29, 43, 104, 1);
+  opacity: 1;
+  position: absolute;
+  top: 317px;
+  left: 680px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.logo_Fylo {
+  width: 134px;
+  height: 39px;
+  opacity: 1;
+  position: relative;
+  top: 40px;
+  left: 10%;
+}
+
+.botones {
+  width: 175px;
+  height: 48px;
+  opacity: 1;
+  position: absolute;
+  top: 112px;
+  left: 10%;
+  overflow: hidden;
+}
+
+.boton_doc {
+  width: 47px;
+  height: 48px;
+  background: rgba(12, 18, 44, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 11px;
+}
+
+.boton_file {
+  width: 47px;
+  height: 48px;
+  background: rgba(12, 18, 44, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 10px;
+  border-radius: 11px;
+}
+
+.boton_upl {
+  width: 47px;
+  height: 48px;
+  background: rgba(12, 18, 44, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 20px;
+  border-radius: 11px;
+}
+
+.texto {
+  width: 242px;
+  color: rgba(255,255,255,1);
+  position: relative;
+  top: 35px;
+  left: 40px;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+
+.contenedor_barra {
+  width: 458px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 65px;
+  left: 40px;
+}
+
+.barra_fondo {
+  width: 458px;
+  height: 20px;
+  background: rgba(20,32,74,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+
+}
+.barra_movible {
+  width: 340px;
+  height: 16px;
+  background: linear-gradient(to right, rgb(255, 194, 191), rgba(255,79,122,1));
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  border: 1px solid rgba(54,20,47,1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.circulo {
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 5px;
+  left: 329px;
+  border-radius: 50%;
+}
+
+.gbs_abajo {
+  width: 472px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 96px;
+  left: 40px;
+  overflow: hidden;
+}
+
+.cero_gb {
+  width: 31px;
+  color: white;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  font-weight: Bold;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.mil_gb {
+  width: 71px;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 401px;
+  font-weight: Bold;
+  opacity: 1;
+  text-align: left;
+}
+
+.gbs_flotante {
+  width: 179px;
+  height: 95px;
+  opacity: 1;
+  position: absolute;
+  top: 270px;
+  left: 998px;
+  overflow: hidden;
+}
+.fond2 {
+  width: 179px;
+  height: 72px;
+  background: white;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px 10px 0px 10px;
+  overflow: hidden;
+}
+.usado {
+  width: 72px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 13px;
+  left: 24px;
+  font-weight:900;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+.gb_left {
+  width: 58px;
+  color: rgba(151,152,157,1);
+  position: absolute;
+  top: 31px;
+  left: 99px;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-top: 25px solid white; 
+  border-left: 25px solid transparent;      
+  margin-left: 160px;
+  color: white;
+}
+
+
 
 
 
 @media screen and (max-width: 750px) {
-
-    }
+}
