@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Raleway', sans-serif;
+  
 }
 
 main {
@@ -13,9 +14,8 @@ main {
   display: flex;
   opacity: 1;
   position: absolute;
-  top: 2%;
-  left: 2%;
   overflow: hidden;
+  top: 1%;
 }
 
 .fondo {
@@ -29,6 +29,7 @@ main {
   top: 380px;
   left: 0px;
   overflow: hidden;
+  transition: 1s;
 }
 
 .contenedor1 {
@@ -134,34 +135,35 @@ main {
   width: 458px;
   height: 20px;
   background: rgba(20,32,74,1);
-  opacity: 1;
   position: relative;
-  top: 0px;
-  left: 0px;
   border-radius: 10px;
-
+  
 }
 .barra_movible {
-  width: 340px;
+  width: 80%;
   height: 16px;
   background: linear-gradient(to right, rgb(255, 194, 191), rgba(255,79,122,1));
-  opacity: 1;
   position: absolute;
   top: 2px;
   left: 1px;
   border: 1px solid rgba(54,20,47,1);
   border-radius: 10px;
-  overflow: hidden;
+  animation: deslizar 3s;
 }
 .circulo {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
-  top: 5px;
-  left: 329px;
+  right:3px;
+  top: 1px;
   border-radius: 50%;
+}
+
+@keyframes deslizar {
+  from{width: 5%;} 
+  to {width: 80%;} 
 }
 
 .gbs_abajo {
@@ -259,18 +261,19 @@ main {
     margin-left: 5%;
     width: 375px;
     height: 667px;
+    
   }
   
   main {
     width: 375px;
     height: 667px;
-  
   }
   
   .fondo {
     height: 100%;
     background: url("images/bg-mobile.png");
     top: 0px;
+    transition: 1s;
   }
   
   .contenedor1 {
