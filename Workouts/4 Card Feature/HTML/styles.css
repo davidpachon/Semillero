@@ -1,0 +1,218 @@
+body {
+  background-color: #868686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 1440px;
+  height: 880px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.fondo {
+  width: 1440px;
+  height: 880px;
+  background-color: white;
+  position: absolute;
+}
+
+.contenedor_tx1 {
+  width: 560px;
+  height: 167px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 79px;
+  left: 459px;
+}
+.texto1 {
+  width: 520px;
+  color: rgba(82,80,91,1);
+  position: absolute;
+  top: 0px;
+  left: 38px;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+  text-align: left;
+}
+.texto2 {
+  width: 520px;
+  color: rgba(155,154,159,1);
+  position: absolute;
+  top: 121px;
+  left: 0px;
+  font-weight: Regular;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.texto3 {
+  width: 520px;
+  color: rgba(82,80,91,1);
+  position: absolute;
+  top: 51px;
+  left: 40px;
+  font-weight: Bold;
+  font-size: 35px;
+  opacity: 1;
+  text-align: left;
+}
+
+.contenedores {
+  width: 100%;
+  height: 530px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 312px;
+  left: 165px;
+  overflow: hidden;
+}
+
+.Team_builder_main {
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  top: 0px;
+  left: 379px;
+}
+.Calculator_main {
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  top: 452px;
+  left: 925px;
+}
+.Karma_main {
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  top: 592px;
+  left: 544px;
+}
+.Supervisor_main {
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  top: 452px;
+  left: 165px;
+}
+
+.linea_roja {
+  width: 349px;
+  height: 17px;
+  background: #EA5453;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: 10px 10px 0px 0px;
+}
+.linea_azul {
+  width: 349px;
+  height: 17px;
+  background: #529EF2;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: 10px 10px 0px 0px;
+}
+.linea_naranja {
+  width: 349px;
+  height: 17px;
+  background: #FBAD4B;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: 10px 10px 0px 0px;
+}
+.linea_celeste {
+  width: 349px;
+  height: 17px;
+  background: #43D3D3;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.sombra {
+  width: 350px;
+  height: 246px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  border-radius: 5px 5px 9px 9px;
+  box-shadow: 1px 5px 10px #9e9e9e;
+}
+
+.titulo {
+  width: 149px;
+  color: black;
+  position: absolute;
+  top: 31px;
+  left: 32px;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.contenido {
+  width: 267px;
+  color: rgba(183,183,185,1);
+  position: absolute;
+  top: 71px;
+  left: 32px;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+.imagen {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 154px;
+  left: 254px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+ 
+body {
+  width: 375px;
+  height: 667px;
+}
+
+main {
+  width: 375px;
+  height: 667px;
+}
+
+.fondo {
+  width: 375px;
+  height: 667px;  
+  background-image: url("");
+  background-repeat: no-repeat;
+  
+}
+}
