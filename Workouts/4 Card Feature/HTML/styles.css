@@ -186,19 +186,19 @@ main {
  
 body {
   width: 415px;
-  height: 569px;
+  height: 609px;
 }
 
 main {
   width: 415px;
-  height: 599px;
+  height: 629px;
   background: white;
   overflow-y: scroll;
 }
 
 .fondo {
   width: 375px;
-  height: 569px;  
+  height: 649px;  
 }
 
 .contenedor_tx1 {
@@ -259,6 +259,4 @@ main {
   top: 322px;
   left: 23px;
 }
-
-
 }

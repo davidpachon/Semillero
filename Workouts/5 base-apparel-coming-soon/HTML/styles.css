@@ -1,0 +1,222 @@
+body {
+  background-color: #868686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  transform: scale(1);
+  transition: all 1s;
+}
+main {
+  width: 1440px;
+  height: 800px;
+  position: absolute;
+  top: -10px;
+}
+.fondo {
+  width: 1440px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+}
+.imagen{
+  width: 610px;
+  height: 800px;
+  background-image: url(images/hero-desktop.jpg);
+  position: absolute;
+  left: 830px;
+}
+.logo {
+  width: 157px;
+  height: 31px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 66px;
+  left: 165px;
+}
+.contenedor_txt {
+  width: 468px;
+  height: 357px;
+  position: absolute;
+  top: 235px;
+  left: 167px;
+}
+.somos {
+  width: 287px;
+  color: rgba(191,146,151,1);
+  position: absolute;
+  font-size: 60px;
+  text-align: left;
+}
+.pronto {
+  width: 391px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 67px;
+  font-size: 60px;
+  text-align: left;
+}
+.texto {
+  width: 468px;
+  color: rgba(197,171,170,1);
+  position: absolute;
+  top: 221px;
+  font-size: 17px;
+  text-align: left;
+}
+.email {
+  width: 445px;
+  height: 80px;
+  position: absolute;
+  top: 582px;
+  left: 165px;
+}
+.contenedor {
+  width: 445px;
+  height: 80px;
+  position: absolute;
+}
+.boton_main:hover .error{
+  display: block;
+}
+.boton_main:hover .boton{
+  background-image: url(images/activo.png);
+  width: 100px;
+  height: 55px;
+}
+.boton_main:hover .otra_vez{
+  display: block;
+}
+.boton_main:hover .error{
+  display: block;
+}
+.error{
+  width: 24px;
+  height: 24px;
+  background-image: url(images/icon-error.svg);
+  top: 17px;
+  left: 340px;
+  position:absolute;
+  display: none;
+}
+.email_address {
+  width: 445px;
+  height: 56px;
+  position: absolute;
+  border: 1px solid #D9CACD;
+  border-radius: 50px;
+  outline:none;
+}
+:invalid{
+  border: 1px solid red;
+  display: block; 
+}
+.otra_vez {
+  color: red;
+  top: 70px;
+  left: 0px;
+  position: absolute;
+  display: none;
+}
+.boton {
+  background-image: url(images/Boton.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  width: 100px;
+  height: 55px;
+  position: absolute;
+  top: 2.5px;
+  left: 370px;
+  border: none;
+}
+@media screen and (max-width: 550px) {
+body {
+  width: 375px;
+  height: 800px;
+  transform: scale(0.9);
+  transition: all 1s;
+}
+main {
+  width: 375px;
+  height: 800px;
+  background: rgba(250,250,250,1);
+}
+.fondo {
+  width: 375px;
+  height: 800px;  
+}
+.imagen{
+  width: 375px;
+  height: 250px;
+  background-image: url(images/hero-mobile.jpg);
+  top: 84px;
+  left: 0px;
+}
+.logo{
+  width: 100px;
+  height: 21px;
+  top: 31px;
+  left: 32px;
+}
+.contenedor_txt {
+  width: 377px;
+  height: 235px;
+  top: 400px;
+  left: 28px;
+}
+.somos {
+  width: 308px;
+  font-size: 40px;
+  text-align: center;
+}
+.pronto {
+  width: 291px;
+  top: 44px;
+  left: 11px;
+  font-size: 40px;
+  text-align: center;
+}
+.texto {
+  width: 324px;
+  top: 141px;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+.email {
+  width: 283px;
+  height: 48px;
+  position: absolute;
+  top: 660px;
+  left: 33px;
+}
+.contenedor {
+  width: 283px;
+  height: 48px;
+}
+.contenedor:hover .boton{
+  background-image: url(images/activo.png);
+  width: 64px;
+  height: 47px;
+}
+.otra_vez{
+  font-size: 14px;
+  top: 60px;
+  left: 10px;
+}
+.error{
+  top: 14.5px;;
+  left: 200px;
+}
+.email_address {
+  width: 283px;
+  height: 48px;
+  outline: none;
+}
+.boton {
+  width: 64px;
+  height: 47px;
+  left:231px;
+}
+}
