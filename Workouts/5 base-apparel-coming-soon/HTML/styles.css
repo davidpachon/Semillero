@@ -1,5 +1,4 @@
 body {
-  background-color: #868686;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +13,6 @@ main {
   top: -10px;
 }
 .fondo {
-  width: 1440px;
-  height: 800px;
   background-color: white;
   position: absolute;
 }
@@ -23,13 +20,12 @@ main {
   width: 610px;
   height: 800px;
   background-image: url(images/hero-desktop.jpg);
-  position: absolute;
   left: 830px;
+  position: absolute;
 }
 .logo {
   width: 157px;
   height: 31px;
-  background-repeat: no-repeat;
   position: absolute;
   top: 66px;
   left: 165px;
@@ -43,14 +39,14 @@ main {
 }
 .somos {
   width: 287px;
-  color: rgba(191,146,151,1);
+  color: #BF9297;
   position: absolute;
   font-size: 60px;
   text-align: left;
 }
 .pronto {
   width: 391px;
-  color: rgba(0,0,0,1);
+  color: #000000;
   position: absolute;
   top: 67px;
   font-size: 60px;
@@ -58,7 +54,7 @@ main {
 }
 .texto {
   width: 468px;
-  color: rgba(197,171,170,1);
+  color: #D9CACD;
   position: absolute;
   top: 221px;
   font-size: 17px;
@@ -87,9 +83,6 @@ main {
 .boton_main:hover .otra_vez{
   display: block;
 }
-.boton_main:hover .error{
-  display: block;
-}
 .error{
   width: 24px;
   height: 24px;
@@ -114,14 +107,11 @@ main {
 .otra_vez {
   color: red;
   top: 70px;
-  left: 0px;
   position: absolute;
   display: none;
 }
 .boton {
   background-image: url(images/Boton.png);
-  background-position: center;
-  background-repeat: no-repeat;
   border-radius: 50px;
   width: 100px;
   height: 55px;
@@ -135,12 +125,10 @@ body {
   width: 375px;
   height: 800px;
   transform: scale(0.9);
-  transition: all 1s;
 }
 main {
   width: 375px;
   height: 800px;
-  background: rgba(250,250,250,1);
 }
 .fondo {
   width: 375px;
@@ -181,13 +169,11 @@ main {
   width: 324px;
   top: 141px;
   font-size: 14px;
-  opacity: 1;
   text-align: center;
 }
 .email {
   width: 283px;
   height: 48px;
-  position: absolute;
   top: 660px;
   left: 33px;
 }
@@ -196,7 +182,6 @@ main {
   height: 48px;
 }
 .contenedor:hover .boton{
-  background-image: url(images/activo.png);
   width: 64px;
   height: 47px;
 }
@@ -212,7 +197,6 @@ main {
 .email_address {
   width: 283px;
   height: 48px;
-  outline: none;
 }
 .boton {
   width: 64px;
