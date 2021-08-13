@@ -1,0 +1,168 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  transform: scale(1);
+  transition: all 1s;
+  background-color: #E6EFF6;
+}
+main{
+  width: 636px;
+  height: 518px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.205), -4px -4px 10px rgba(0, 0, 0, 0.205);
+}
+.contenedor1{
+  width: 630px;
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 41px;
+  margin-left: 41px;
+}
+.join {
+  width: 257px;
+  color: #48ACAA;
+  font-weight: Bold;
+  font-size: 26px;
+}
+.tx1 {
+  width: 390px;
+  color: #C0D554;
+  font-weight: Bold;
+  font-size: 19px;
+}
+.tx2 {
+  width: 560px;
+  color: #ADB1B4;
+  font-size: 16px;
+  line-height : 30px;
+}
+.abajo{
+  width: 636px;
+  height: 259px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedor2, .contenedor3{
+  width: 318px;
+  height: 259px;
+  background-color: #2BB3B1;
+  border-bottom-left-radius: 5px;
+  text-align: left;
+  color: white;
+}
+.content-txt{
+  margin-top: 41px;
+  margin-left: 41px;
+  display: flex;
+  flex-direction:column;
+}
+.Subscription {
+  width: 186px;
+  font-weight: Bold;
+  font-size: 18px;
+}
+.pay {
+  width: 610px;
+  font-weight: Bold;
+  font-size: 30px;
+}
+.pay per{
+  color: hsl(216, 92%, 90%);
+  font-weight: Bold;
+  font-size: 15px;
+  position: relative;
+  top: -5px;
+}
+.full {
+  width: 240px;
+  font-size: 15px;
+}
+button{
+  width: 236px;
+  height: 47px;
+  border-radius: 5px;
+}
+.boton {
+  width: 237px;
+  height: 48px;
+  background: rgba(191,223,50,1);
+  border-radius: 5px;
+  outline: none;
+  font-weight: Bold;
+  font-size: 16px;
+  color: white;
+  border: none;
+  margin-top: -4px;
+  margin-left: -9px;
+}
+.boton:hover{
+  background: rgb(224, 245, 134);
+}
+.contenedor3{
+  background-color: #4ABEBD;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+}
+.content-txt1 {
+  width: 187px;
+  height: 188px;
+  display: flex;
+  flex-direction:column;
+  margin-top: 41px;
+  margin-left: 41px;
+}
+.Why_us {
+  font-weight: Bold;
+  font-size: 18px;
+}
+.tx3 {
+  font-size: 14px;
+}
+.tx3 pre{
+  font-family: 'Karla', sans-serif;
+}
+@media screen and (max-width: 875px) {
+body {
+  width: 375px;
+  transform: scale(0.9);
+}
+main{
+  width: 375px;
+  height: 710px;
+}
+.tx1 {
+  width: 250px;
+  font-size: 16px;
+}
+.tx2 {
+  width: 320px;
+  font-size: 16px;
+  line-height : 25px;
+}
+.abajo{
+  width: 375px;
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor2, .contenedor3{
+  width: 375px;
+  height: 288px;
+  background-color: #2BB3B1;
+  border-bottom-left-radius: 0px;
+}
+.contenedor3{
+  background-color: #4ABEBD;
+  border-bottom-left-radius: 5px;
+}
+.boton {
+  width: 297px;
+  height: 48px;
+}
+}

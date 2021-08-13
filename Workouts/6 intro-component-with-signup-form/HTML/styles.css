@@ -35,13 +35,16 @@ main{
   width: 559px;
   height: 60px;
   background-color: #5D54A3;
-  padding-top: 30px;
   margin-top: -330px;
   margin-left: 735px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 8px 2px #00000030;
   color: white;
+}
+.Try_free txt{
+  position: relative;
+  top: 15px;
 }
 form{
   width: 515px;
@@ -68,6 +71,10 @@ button{
   border-radius: 5px;
   border: none;
   box-shadow: inset -1px -6px 2px #00000025;
+}
+button:hover{
+  background-color: #77E2B4;
+  box-shadow: inset -1px -6px 2px #00000015;
 }
 .texto_aceptar{
   margin-top: 10px;
