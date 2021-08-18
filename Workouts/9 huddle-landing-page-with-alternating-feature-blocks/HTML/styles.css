@@ -1,0 +1,126 @@
+header{
+    width: 1440px;
+    height: 738px;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-color: #EDFBFE;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width: 1440px;
+    height: 161px;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    margin: 56px 80px 80px;
+}
+nav img{
+    width: 200px;
+    height: 32px;
+}
+nav button{
+    width: 200px;
+    height: 48px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.158);
+}
+.contenedor1{
+    width: 1272px;
+    height: 482px;
+    display: flex;
+    align-items: center;   
+}
+.texto1{
+    display: flex;
+    flex-direction: column;
+}
+.build{
+    width: 490px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+.huddle{
+    width: 518px;
+    font-weight:bolder;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.texto1 button{
+    width: 280px;
+    height: 56px;
+    border: none;
+    border-radius: 50px;
+    background-color: #FE52C0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.imagen1{
+    width: 680px;
+    height: 482px;
+}
+body{
+    width: 100%;
+    height: 2700px;
+    background-color: withe;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-between;
+    transform: scale(1);
+    transition: all 1s;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor_body{
+    width: 1283px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.041), -4px -4px 4px rgba(0, 0, 0, 0.041);
+}
+.texto_body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #002430;
+}
+.contenido{
+    width: 500px;
+    font-size: 18px;
+    color: #8B9094;
+}
+.imagen_body{
+    width: 409px;
+    height: 330px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+footer{
+    width: 1440px;
+    height: 560px;
+    margin-top: 200px;
+    background-color: #00252E;
+}
+@media screen and (max-width: 875px) {
+body {
+  width: 375px;
+  transform: scale(0.9);
+}
+main{
+  width: 375px;
+}
+}
