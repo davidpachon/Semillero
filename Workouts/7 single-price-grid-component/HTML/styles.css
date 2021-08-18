@@ -74,10 +74,7 @@ main{
 }
 .pay per{
   color: hsl(216, 92%, 90%);
-  font-weight: Bold;
   font-size: 15px;
-  position: relative;
-  top: -5px;
 }
 .full {
   width: 240px;
