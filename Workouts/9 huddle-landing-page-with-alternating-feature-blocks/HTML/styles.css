@@ -68,7 +68,7 @@ nav button{
 body{
     width: 100%;
     height: 2700px;
-    background-color: withe;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -86,6 +86,10 @@ body{
     align-items: center;
     border-radius: 20px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.041), -4px -4px 4px rgba(0, 0, 0, 0.041);
+}
+.contenedor_body:nth-child(3){
+    display: flex;
+    flex-direction: row-reverse;
 }
 .texto_body{
     display: flex;
@@ -109,18 +113,231 @@ body{
     margin-right: 40px;
     margin-left: 40px;
 }
+.flotante{
+    width: 800px;
+    height: 250px;
+    position: absolute;
+    top: 2000px;
+    box-shadow:  4px 4px rgba(0, 0, 0, 0.150), -4px -4px 4px rgba(0, 0, 0, 0.150);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.flt_btn{
+    font-size: 34px;
+    color: #002430;
+    font-family: 'Poppins', sans-serif;
+}
+.flotante button{
+    width: 400px;
+    height: 80px;
+    border: none;
+    border-radius: 50px;
+    background-color: #FE52C0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.150)
+}
 footer{
     width: 1440px;
     height: 560px;
-    margin-top: 200px;
     background-color: #00252E;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.main_footer{
+    width: 1258px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 250px;
+    margin-left: -70px;
+}
+.cont{
+    width: 550px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.cont:nth-child(2){
+    margin-left: 50px;
+}
+.cont:nth-child(4){
+    width: 700px;
+    justify-content: space-between;
+}
+.cont:nth-child(4) img{
+    width: 32px;
+    height: 32px;
+}
+.txt_footer{
+    font-size: 18px;
+    text-indent:50px;
+    line-height: 35px;
+} 
+.txt_footer_1{
+    width: 324px;
+    height: 96px;
+    margin-left: 25px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+.txt_footer_1_1{
+    width: 294px;
+    height: 96px;
+    position: relative;
+    left: 50px;
+    top: -25px;
+}
+.phone{
+    margin-top: -15px;
+}
+.gmail{
+    margin-top: 15px;
+}
+.media img{
+    margin-left: 20px;
+}
+.logo_footer{
+    width: 239px;
+    height: 38px;
+    position: relative;
+    top: 170px;
+    left: 170px;
 }
 @media screen and (max-width: 875px) {
 body {
-  width: 375px;
   transform: scale(0.9);
 }
-main{
-  width: 375px;
+header{
+    width: 452px;
+    background-image: url(images/bg-hero-mobile.svg);
+}
+nav{
+    width: 452px;
+    height: 684px;
+}
+nav img{
+    width: 125px;
+    height: 19px;
+}
+.navbar{
+    margin: 29px 19px 19px;
+}
+nav button{
+    width: 116px;
+    height: 29px;
+}
+.contenedor1{
+    width: 452px;
+    justify-content: center; 
+    flex-direction: column;
+    text-align: center;
+}
+.texto1{
+    width: 329px;
+}
+.build{
+    width: 329px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.huddle{
+    width: 349px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.texto1 button{
+    width: 290px;
+    height: 48px;
+}
+.imagen1{
+    width: 357px;
+    height: 252px;
+    margin-top: 40px;
+}
+.contenedor_body{
+    margin-top: 100px;
+    width: 345px;
+    height: 482px;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #002430;
+}
+.contenedor_body:nth-child(3){
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flotante{
+    width: 424px;
+    height: 184px;
+    top: 2500px;
+}
+.flt_btn{
+    font-size: 23px;
+}
+.flotante button{
+    width: 242px;
+    height: 48px;
+    font-size: 12px;
+}
+footer{
+    width: 452px;
+    height: 750px;
+}
+.main_footer{
+    width: 452px;
+    flex-direction: column;
+    margin-top: 240px;
+    margin-left: -150px;
+}
+.logo_footer{
+    width: 202px;
+    height: 32px ;
+    left: 50px;
+}
+.txt_footer_1_1{
+    width: 376px;
+    height: 117px;
+}
+.txt_footer_1{
+    display: flex;
+    line-height: 5px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.gmail .txt_footer_1{
+    margin-top: -18px;
+}
+.phone img{
+    position: relative;
+    top: 20px;
+}
+.gmail{
+    margin-top: -60px;
+}
+.cont{
+    width: 387px;
+}
+.cont:nth-child(2){
+    margin-left: 0px;
+    margin-top: -70px;
+}
+.media{
+    margin-left: 100px;
+}
+.cont .txt_footer2{
+    margin-left: 30px;
 }
 }
