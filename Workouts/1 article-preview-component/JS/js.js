@@ -69,13 +69,13 @@ derecha.append(share);
     
 document.body.append(contenedor_main);
 
-function cambiar() {
+function Mouse_on() {
     compartir.src = "images/Share2.png";
     contenedor_share.style.display = "flex";
 }
-function cambiar2() {
+function Mouse_off() {
     compartir.src = "images/Share.png";
     contenedor_share.style.display = "none";
 }
-compartir.addEventListener("mouseenter", cambiar);
-compartir.addEventListener("mouseleave", cambiar2);
+compartir.addEventListener("mouseenter", Mouse_on);
+compartir.addEventListener("mouseleave", Mouse_off);
