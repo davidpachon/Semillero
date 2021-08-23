@@ -1,88 +1,73 @@
-let contenedor_main = document.createElement('div');
-contenedor_main.setAttribute("class", "contenedor_main");
-document.body.append(contenedor_main);
+let crear = function (tipo, clase, atributo){
+    let crea = document.createElement(tipo);
+    crea.setAttribute(clase, atributo);
+    return crea;
+}
 
-let img_b = document.createElement('div');
-img_b.setAttribute("class", "img_b");
-contenedor_main.append(img_b);
+let contenedor_main = crear("div", "class", "contenedor_main");
 
-let img_draw = document.createElement('img');
-img_draw.setAttribute("src", "images/drawers.jpg");
-img_b.append(img_draw);
+    let img_b = crear("div", "class", "img_b");
 
-let txt = document.createElement('div');
-txt.setAttribute("class", "txt");
-contenedor_main.append(txt);
+        let img_draw = crear("img", "src", "images/drawers.jpg");
+        img_b.append(img_draw);
+        contenedor_main.append(img_b);
 
-let parrafos = document.createElement('div');
-parrafos.setAttribute("class", "parrafos");
-txt.append(parrafos);
+            let txt = crear("div", "class", "txt");
+                let derecha = crear("div", "class", "derecha");
 
-let texto = document.createElement ('h1');
-texto.setAttribute("class", "texto");
-texto.innerText="Shift the overall look and feel by adding these wonderful touches to furniture in your home"; 
-parrafos.append(texto);
+                    let texto = crear("h1", "class", "texto");
+                    texto.innerText="Shift the overall look and feel by adding these wonderful touches to furniture in your home"; 
 
-let texto1 = document.createElement ('h2');
-texto1.setAttribute("class", "texto1");
-texto1.innerText="Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete."; 
-parrafos.append(texto1);
+                    let texto1 = crear("h1", "class", "texto1");
+                    texto1.innerText="Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete."; 
+                    
+                derecha.append(texto, texto1);
+            txt.append(derecha);
+        contenedor_main.append(txt);
 
-let share = document.createElement('div');
-share.setAttribute("class", "share");
-parrafos.append(share)
 
-let img_nombre_fecha=document.createElement('div');
-img_nombre_fecha.setAttribute("class", "img_nombre_fecha");
-share.append(img_nombre_fecha);
+let share = crear("div", "class", "share");
 
-let img_pro = document.createElement('img');
-img_pro.setAttribute("src", "images/avatar-michelle.jpg");
-img_nombre_fecha.append(img_pro);
+    let img_nombre_fecha = crear("div", "class", "img_nombre_fecha");
+    
+        let img_pro = crear("img", "src", "images/avatar-michelle.jpg");
+        img_nombre_fecha.append(img_pro);
 
-let nombre_fecha = document.createElement('div');
-nombre_fecha.setAttribute("class", "nombre_fecha");
-img_nombre_fecha.append(nombre_fecha);
+            let nombre_fecha = crear("div", "class", "nombre_fecha");
+                
+                let nombre = crear("div", "class", "nombre");
+                nombre.innerText="Michelle Appleton"; 
+                
+                let fecha = crear("div", "class", "fecha");
+                fecha.innerText="28 Jun 2020";
+                
+                nombre_fecha.append(nombre, fecha);
+            img_nombre_fecha.append(nombre_fecha);
+    
+    share.append(img_nombre_fecha);
 
-let nombre = document.createElement ('div');
-nombre.setAttribute("class", "nombre");
-nombre.innerText="Michelle Appleton"; 
-nombre_fecha.append(nombre);
+    let contenedor_share = crear("div", "class", "contenedor_share");
 
-let fecha = document.createElement('div');
-fecha.setAttribute("class", "fecha");
-fecha.innerText="28 Jun 2020";
-nombre_fecha.append(fecha);
+                let compartir_texto = crear("span", "class", "compartir_texto");
+                compartir_texto.innerText="SHARE";
+                contenedor_share.append(compartir_texto);
+                        
+                let logo_main = crear("div", "class", "logo_main");
+                let logo_1 = crear("img", "src", "images/icon-facebook.png");
+                let logo_2 = crear("img", "src", "images/icon-twitter.png");
+                let logo_3 = crear("img", "src", "images/icon-pinterest.png");
+                logo_main.append(logo_1, logo_2, logo_3);
 
-let compartir = document.createElement('img');
-compartir.setAttribute("src", "images/Share.png", "id", "compartir");
-share.append(compartir);
-
-let contenedor_share = document.createElement ('div');
-contenedor_share.setAttribute("id", "contenedor_share");
+    contenedor_share.append(logo_main);
 contenedor_main.append(contenedor_share);
 
-let compartir_texto = document.createElement('span');
-compartir_texto.setAttribute("class", "compartir_texto");
-compartir_texto.innerText="SHARE";
-contenedor_share.append(compartir_texto);
+    let compartir = crear("img", "src", "images/Share.png");
+    share.append(compartir);        
 
-let logo_main = document.createElement('div');
-logo_main.setAttribute("class", "logo_main");
-contenedor_share.append(logo_main);
+derecha.append(share);
 
-let logo_1 = document.createElement('img');
-logo_1.setAttribute("src", "images/icon-facebook.png");
-logo_main.append(logo_1);
-
-let logo_2 = document.createElement('img');
-logo_2.setAttribute("src", "images/icon-twitter.png");
-logo_main.append(logo_2);
-
-let logo_3 = document.createElement('img');
-logo_3.setAttribute("src", "images/icon-pinterest.png");
-logo_main.append(logo_3);
-
+    
+document.body.append(contenedor_main);
 
 function cambiar() {
     compartir.src = "images/Share2.png";
@@ -92,12 +77,5 @@ function cambiar2() {
     compartir.src = "images/Share.png";
     contenedor_share.style.display = "none";
 }
-
-compartir.addEventListener("mouseenter", ()=>{
-    cambiar()
-});
-compartir.addEventListener("mouseleave", ()=>{
-    cambiar2()
-});
-
-
+compartir.addEventListener("mouseenter", cambiar);
+compartir.addEventListener("mouseleave", cambiar2);
