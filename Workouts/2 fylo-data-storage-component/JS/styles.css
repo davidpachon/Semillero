@@ -1,0 +1,212 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif; 
+  transform: scale(1);
+  transition: all 1s;
+  background-color: rgba(12, 18, 44, 1);
+}
+main {
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.contenedor_principal{
+  width: 918px;
+  height: 200px;
+  margin-left: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contenedor_izquierda {
+  width: 350px;
+  height: 201px;
+  background: rgba(30, 44, 105, 1);
+  border-radius: 10px 100px 10px 10px;
+  display: flex;
+}
+.contenedor_logo_btn{
+  width: 170px;
+  height: 125px;
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo_Fylo {
+  width: 134px;
+  height: 39px;
+}
+.botones{
+  display: flex;
+  justify-content: space-between;
+}
+.botones img{
+  width: 47px;
+  height: 47px;
+}
+.contenedor_derecha {
+  width: 540px;
+  height: 153px;
+  background: rgba(29, 43, 104, 1);
+  border-radius: 10px;
+  margin-top: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor_contenido_der{
+  width: 460px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gb_usadas{
+  color: rgba(255,255,255,1);
+  font-size: 14px;
+}
+.barra {
+  width: 458px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barra_fondo {
+  width: 458px;
+  height: 20px;
+  background: rgba(20,32,74,1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.barra_movible {
+  width: 80%;
+  height: 16px;
+  background: linear-gradient(to right, rgb(255, 194, 191), rgba(255,79,122,1));
+  border: 1px solid rgba(54,20,47,1);
+  border-radius: 10px;
+  animation: deslizar 3s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.circulo {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+  margin-top: -2px;
+  background: rgba(255,255,255,1);
+  border-radius: 50%;
+}
+@keyframes deslizar {
+  from{width: 5%;} 
+  to {width: 80%;} 
+}
+.gbs_abajo {
+  color: white;
+  font-weight: Bold;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gbs_flotante {
+  width: 179px;
+  height: 95px;
+  opacity: 1;
+  position: relative;
+  top: -50px;
+  left: -222px;
+}
+.contenedor_flotante {
+  width: 179px;
+  height: 72px;
+  background: white;
+  border-radius: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.usado {
+  color: rgba(0,0,0,1);
+  font-weight: bold;
+  font-size: 30px;
+}
+.gb_left {
+  color: rgba(151,152,157,1);
+  font-weight: Bold;
+  font-size: 13px;
+  margin-left: 20px;
+}
+.triangulo {
+  position: relative;
+  margin-left: 160px;
+  left: -6px;
+  border-top: 25px solid white; 
+  border-left: 25px solid transparent;      
+  color: white;
+}
+@media screen and (max-width: 950px) {
+  body{
+    background: url("images/bg-mobile.png");
+    background-size: cover;
+    transform: scale(0.9);
+  }
+  main {
+    width: 375px;
+    height: 667px;
+    background-image: none;
+  }
+  .contenedor_principal {
+    width: 326px;
+    height: 377px;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .contenedor_izquierda {
+    width: 326px;
+    height: 201px;
+  }
+  .contenedor_derecha{
+    width: 326px;
+    height: 160px;
+    margin: 0px;
+    align-items: center;
+  }
+  .contenedor_contenido_der{
+    width: 273px;
+    height: 76px;
+  }
+  .gb_usadas{
+    text-align: center;
+  }
+  .barra {
+    width: 260px;
+  } 
+  .gbs_flotante {
+    width: 181px;
+    height: 74px;
+    top: 190px;
+    left: -265px;
+  }
+  .contenedor_flotante{
+    width: 181px;
+    height: 74px;
+    border-radius: 10px;
+    border: solid 1px black;
+  }
+  .triangulo {
+    display: none;
+  } 
+}
