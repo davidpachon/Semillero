@@ -37,7 +37,7 @@ let contenedor_contenido_der = crear("div", "class", "contenedor_contenido_der")
 contenedor_derecha.append(contenedor_contenido_der);
 
 let gb_usadas = crear("span", "class", "gb_usadas");
-gb_usadas.innerText = "You've used 815 gb of you storage";
+gb_usadas.innerHTML = "You've used <b>815 gb</b> of you storage";
 contenedor_contenido_der.append(gb_usadas)
 
 
