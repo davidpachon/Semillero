@@ -55,22 +55,6 @@ main {
     position: relative;
     top: 15px;
 }
-.contenedor_form{
-    width: 476px;
-	padding: 40px;
-    background-color: white;
-    margin-top: 20px;
-    margin-left: 735px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 2px #00000025;
-}
-
-form {
-	border: solid;
-	gap: 20px;
-	display: flex;
-	flex-direction: column;
-}
 
 button {
     width: 460px;
@@ -99,6 +83,89 @@ button:hover {
     color: #EB7E84;
 }
 
+.contenedor_form{
+    width: 476px;
+	padding: 40px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 735px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 2px #00000025;
+}
+
+form {
+    width: 462px;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	color: #D28D92;
+	margin-left: 62%;
+	display: none;
+}
+
+.formulario__input {
+	font-family: 'Poppins', sans-serif;
+	width: 93.7%;
+	height: 50px;
+	background: #fff;
+	border: solid 1px #D8D8D8;
+	border-radius: 5px;
+	padding-left: 25px;
+}
+
+.formulario__input:focus {
+	border: 3px solid #605B79;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario__btn {
+	font-family: 'Poppins', sans-serif;
+	height: 50px;
+	width: 100%;
+	background: green;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+
+/* Validacion */
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
 @keyframes movebg {
     0%,
     50%,
@@ -110,6 +177,8 @@ button:hover {
         background-position: bottom;
     }
 }
+
+
 
 @media screen and (max-width: 875px) {
     body {
@@ -143,27 +212,25 @@ button:hover {
         margin-top: 0px;
         margin-left: 25px;
     }
-    form {
-        width: 327px;
-        height: 454px;
-        margin-top: 20px;
+ 
+    .contenedor_form{
+        width: 245px;
         margin-left: 25px;
+    }    
+ 
+    form {
+        width: 245px;
+        margin-top: 20px;
+        margin-left: 0px;
         border-radius: 10px;
     }
-    .contenedor_campos {
-        width: 279px;
-        height: 389;
-        ;
-    }
-    .campos {
-        width: 249px;
-    }
-    button {
-        width: 276px;
-    }
+    
     .texto_aceptar {
         width: 259px;
         text-align: center;
         font-size: 11.5px;
+    }
+    .formulario__input-error {
+        margin-left: 29%;
     }
 }
