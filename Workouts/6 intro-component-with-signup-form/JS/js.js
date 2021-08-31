@@ -166,3 +166,4 @@ formular.addEventListener('submit', (e) => {
 		alert("Por Favor Diligenciar De Manera Correcta Todos Los Campos");
 	}
 });
+
