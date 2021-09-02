@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+main{
+    width: 920px;
+    height: 480px;
+    background-color: #55dbd9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    left: 39%;
+    top: -2%;
+}
+.izquierda,
+.derecha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+.contedor_botones{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.botones{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: #4ABEBD;
+    background-color: #4ABEBD;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+}
+.boton{
+    margin-top: 20px;
+    margin-left: 6px;
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: #4ABEBD;
+    background-color: #4ABEBD;
+    color: white;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 17px;
+}
+.boton:nth-child(1){
+    margin-left: 0px;
+}
+.boton:hover{
+    background-color: #279b99;
+}
+input::placeholder{
+    color: rgb(231, 231, 231);
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+}
+input:hover{
+    background-color: #279b99;
+}
+input:focus{
+    background-color: #279b99;
+}
+.circulo{
+    border-radius: 50%;
+    border: solid 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: white;
+    font-size: 120px;
+}
