@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-image: url(images/thumb-1920-38153.jpg);
+}
+main{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: radial-gradient(white, gold);
+    border: solid 5px black;
+}
+
+.cara_reloj{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    background-image: url(images/kisspng-clock-face-watch-roman-numerals-clip-art-clipart-clock-background-for-collages-pinterest-5ce01146321ea8.7347142515581883582053.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manecilla { 
+    width: 45%;
+    height: 5px;
+    background-color: rgb(58, 58, 58);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    left: 5%;
+}
+
+.circulo{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+}
+.segundos{
+    background-color: red;
+    transition: 0.1seg;
+}
+.hora{
+    width: 40%;
+    left: 10%;
+}
