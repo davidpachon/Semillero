@@ -5,7 +5,7 @@ let crear = function(elemento, clase, nombre){
     }
   return creador;
 }
-let countDownTimer;
+
 let main = crear("main");
 
 let titulo = crear("h2");
@@ -58,6 +58,7 @@ main.append(izquierda, derecha);
 document.body.append(main);
 
 
+let countDownTimer;
 function coundown (duracion, display) {
     clearInterval(countDownTimer);
     let timer = duracion, minutos, segundos;  
