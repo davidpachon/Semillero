@@ -57,12 +57,12 @@ function ejecutar(){
     },tiempoJuego);
 }
 
-function IniciarJuego() {
+function iniciarJuego() {
     tableroPuntos.textContent = 0;
     puntaje = 0;
     tiempoFinalizado = false;
-    ejecutar();
     setTimeout(() => tiempoFinalizado = true, 10000);//10 segundos//Timeout establece un temporizador que ejecuta una función o una porción de código después de que transcurre un tiempo establecido.
+    ejecutar();
 }
 
 function calcularGolpes(e){//e nos permite jugar con muchas propiedades
@@ -70,6 +70,7 @@ function calcularGolpes(e){//e nos permite jugar con muchas propiedades
     puntaje++;
     this.parentNote.classList.remove('up');//parentNote es el que nos trae el padre elemento de un nodo
     tableroPuntos.textContent = puntaje;
+    ejecutar();
 }
 
 topos.forEach(topo => topo.addEventListener('click', calcularGolpes));
