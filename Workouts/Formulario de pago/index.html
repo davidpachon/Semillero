@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>Pago</title>
+</head>
+<body>
+
+    <section class="tarjeta" id="tarjeta">
+        <div class="delantera">
+            <img src="img/chip-tarjeta.png" class="chip" alt="">
+            <div class="datos">
+                <div class="grupo" id="numero">
+                    <p class="label">Número Tarjeta</p>
+                    <p class="numero">XXXX XXXX XXXX XXXX</p>
+                </div>
+                <div class="flexbox">
+                    <div class="grupo" id="nombre">
+                        <p class="label">Nombres y Apellidos</p>
+                        <p class="nombre">XXXX XXXX</p>
+                    </div>
+
+                    <div class="grupo" id="expiracion">
+                        <p class="label" id="exp">Expiración</p>
+                        <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trasera">
+            <div class="barra-magnetica"></div>
+            <div class="datos">
+                <div class="grupo" id="firma">
+                    <p class="label">Firma</p>
+                    <div class="firma"><p></p></div>
+                </div>
+                <div class="grupo" id="ccv">
+                    <p class="label">CCV</p>
+                    <p class="ccv"></p>
+                </div>
+            </div>
+            <p class="leyenda">Esta tarjeta es propiedad de BANCO y su uso esta sujeto a los términos y condiciones del contrato firmado entre el usuario y la entidad.</p>
+            <a href="#" class="link-banco">www.tubanco.com</a>
+        </div>
+    </section>
+
+	<script src="script.js"></script>
+</body>
+</html>

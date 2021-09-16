@@ -1,0 +1,296 @@
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100%;
+    height: 800px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: flex;
+}
+.izquierda{
+    width: 43.6%;
+    height: 800px;
+    background-image: url(img/back.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    width: 259px;
+    height: 55px;   
+}
+.texto_abajo{
+    width: 275px;
+    margin-left: 35px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
+.titulo_abajo{
+    font-weight: 100;
+    padding-left: 10px;
+}
+.contenido_abajo{
+    border-left: solid 1px white;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.derecha{
+    width: 56.4%;
+    height: 800px;
+    background: linear-gradient(rgba(14,77,116,1), rgba(0,0,0,1));
+}
+.formulario{
+    margin: 70px 70px 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pago{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contenedor_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.expedicionCCV .contenedor_input:nth-child(2) span:nth-child(1){
+    visibility: hidden;
+}
+.expedicionCCV{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 4.4%;
+    margin-top: 2%;
+}
+span{
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+.contenedor_input{
+    width: 90%;
+    
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+input, select{
+    width: 91.1%;
+    outline: none;
+    height: 47px;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: black;
+    border-color: black;
+}
+select{
+    margin-top: 2px;
+    height: 52px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+select::placeholder{
+    color: rgb(177, 177, 177);
+    font-size: 15px;
+}
+input::placeholder{
+    color: rgb(177, 177, 177);
+    font-size: 15px;
+}
+input, select:focus{
+    color: white;
+    font-size: 15px;
+}
+.expedicionCCV input{
+    width: 86%;
+}
+#correo, #inputNombre, #inputNumero{
+    width: 95.5%;
+}
+#numTarjeta{
+    width: 95.5%;
+}
+input:nth-child(1){
+    width: 15px;
+    height: 15px;
+}
+button{
+    margin-top: 3%;
+    width: 223px;
+    height: 45px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.tarjeta {
+	width: 400px;
+	height: 200px;
+    background-color: linear-gradient(rgba(0,82,131,1), rgba(0,24,39,1));
+	position: relative;
+    top: 200px;
+    left: 70px;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.tarjeta.active {
+	transform: rotateY(180deg);
+}
+
+.tarjeta > div {
+	padding-left: 30px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* ---------- Tarjeta Delantera ----------*/
+
+.tarjeta .delantera {
+	background:linear-gradient(rgba(0,82,131,1), rgba(0,24,39,1));
+}
+
+.delantera .chip {
+	width: 46px;
+    height: 39px;
+    margin-top: 20px;
+}
+
+.delantera .grupo .label {
+	font-size: 12px;
+	color: #7d8994;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+#expiracion{
+    margin-right: 20px;
+}
+.mes, .year{
+    font-size: 15px;
+}
+
+/* ---------- Tarjeta Trasera ----------*/
+.trasera {
+	background-size: cover;
+	position: absolute;
+	top: 0;
+    background: linear-gradient(rgba(0,82,131,1), rgba(0,24,39,1));
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.trasera .barra-magnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.trasera .datos {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trasera .datos p {
+	margin-bottom: px;
+}
+
+.trasera .datos #firma {
+	width: 70%;
+}
+#firma{
+    margin-top: -14px;
+    color:white;
+}
+
+.trasera .datos #firma .firma {
+	height: 40px;
+	background: black;
+    color: white;
+}
+.trasera .datos #firma .firma p {
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: white;
+	font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-transform: capitalize;
+}
+.label{
+    padding-top: 20px;
+}
+.trasera .datos #ccv {
+	width: 20%;
+}
+
+.trasera .datos #ccv .ccv {
+	background: #fff;
+	height: 20px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+.ccv{
+height: 17px;
+margin-top: -10px;
+}
+.trasera .leyenda {
+	font-size: 10px;
+}
+
+.trasera .link-banco {
+	font-size: 8px;
+	color: #fff;
+}
+
+.link-banco{
+    margin-top: 20px;
+}
