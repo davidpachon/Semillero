@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    transition: 0.9s;
+}
+gris{
+    color: #717171;
+}
+blanco{
+    color: #FFFF;
+}
+azul{
+    color: #4C88B5;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 0.9s;
+}
+.linea{
+    margin-left: 57px;
+    padding-top: 54px;
+    width: 98px;
+    background-color: #4C88B5;
+    transition: 0.9s;
+}
+.sinco{
+    font-weight:400;
+    margin-top: 0;
+    margin-left: -23.5px;
+    font-size: 44px;
+    letter-spacing: -1.5px;
+    color: #4C88B5;
+    transition: 0.9s;
+}
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    transition: 0.9s;
+}
+.contenedor1{
+    display: flex;
+    transition: 0.9s;
+}
+.contenedorFigura{
+    margin-top: 10%;
+    margin-left: 20%;
+    z-index: 2;
+    transition: 0.9s;
+}
+.contenedorEvolucion{
+    width: 20%;
+    display: flex;
+    text-align: right;
+    transition: 0.9s;
+}
+.evolucion{
+    font-size: 46px;
+    text-align: right;
+    margin-top: 6%;
+    margin-left: 10%;
+    z-index: 2;
+    transition: 0.9s;
+}
+.contenedorEvolucion img{
+    margin-top: -87%;
+    margin-left: -32%;
+    z-index: 1;
+    transition: 0.9s;
+} 
+
+.contenedor2{
+    display: flex;
+    transition: 0.9s;
+}
+.contenedorImagenes{
+    margin-top: -15px;
+    margin-left: 10%;
+    display: flex;
+    z-index: 1;
+    transition: 0.9s;
+}
+.imgPersona{
+    margin-top: -5%;
+    margin-left: -64px;
+    transition: 0.9s;
+}
+.divImg1, .divImg2{
+    display: flex;
+    flex-direction: column;
+    transition: 0.9s;
+}
+.divImg2{
+    margin-left: 22%;
+}
+.divImg1 img{
+    width: 305px;
+    height: 184px;
+    transition: 0.9s;
+}
+.divImg2 img{
+    width: 293px;
+    height: 216px;
+    transition: 0.9s;
+}
+.old{
+    margin-top: 40px;
+    width: 35%;
+    font-size: 22px;
+    transition: 0.9s;
+}
+.new{
+    margin-top: 12px;
+    margin-right: 35px;
+    align-self: end;
+    width: 45%;
+    font-size: 22px;
+    text-align: right;
+    transition: 0.9s;
+}
