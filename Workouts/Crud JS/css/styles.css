@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+}
+.contenido{
+    width: 60%;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 100px;
+}
+.contFormulario{
+    display: none;
+}
+.mostrar{
+    display: flex !important;
+}
+main{
+    display: flex;
+    margin-top: 5%;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+.general{
+    display: flex;
+}
+.cabecera{
+    height: 50px;
+    font-size: 31px;
+    text-align: left;
+    color: #007ACC;
+}
+.modulos{
+    width: 27%;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.modulos button{
+    width: 100%;
+    height: 46px;
+    font-size: 21px;
+    background-color: #DDDDDD;
+    color: #333345;
+    outline: none;
+    border: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.modulos button:hover{
+    background-color: #afafaf;
+}
+.tituloBoton{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background-color: #F5F5F5;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.tituloBoton button{
+    height: 80%;
+    margin-right: 10px;
+    color: white;
+    background-color: #007ACC;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 17px;
+    cursor: pointer;
+}
+.tituloBoton button:hover{
+    background-color: #018fee;
+}
+.tituloBoton span{
+    display: flex;
+    justify-self: center;
+    margin-right: 30%;
+    font-size: 20px;
+}
+.contTabla{
+    width: 100%;
+}
+.tabla{
+    width: 100%;
+    border: solid 2px #DDDDDD;
+    background-color: #DDDDDD;
+    border-radius: 7px;
+}
+tr{
+    text-align: center;
+}
+th, td{
+    height: 45px;
+    border: solid 1px #DDDDDD;
+    background-color: white;
+}
+td button:nth-child(1){
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/el_pencil.svg);
+    background-size: cover;
+    cursor: pointer;
+}
+td button:nth-child(2){
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/bi_trash-fill.svg);
+    background-size: cover;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#formulario{
+    background-color: white;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 10px;
+}
+.titForm{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007ACC;
+    border-radius: 10px 10px 0px 0px;
+}
+.tituloForm{
+    color: white;
+    font-size: 20px;
+}
+.formularioInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.formularioInputs label{
+    margin-left: 9.3%;    
+}
+.formularioInputs input{
+    align-self: center;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px #b9b9b9;
+    padding-left: 15px;
+}
+.formularioBotones{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.formularioBotones button{
+    width: 70px;
+    height: 100%;
+    margin-right: 5px;
+    color: white;
+    background-color: #007ACC;
+    border-radius: 5px;
+    border: transparent;    
+    cursor: pointer;
+}
+.formularioBotones button:hover{
+    background-color: #018fee;
+    cursor: pointer;
+}

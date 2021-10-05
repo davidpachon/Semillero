@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Crud</title>
+</head>
+<body>
+    <main>
+        <div class="cabecera">
+            <span class="Titulo">CONFIGURACIÓN DE RIESGOS</span>
+        </div>
+
+        <div class="general">
+
+            <div class="modulos">
+
+            <a href="impactos.html">
+            <button class="mod">IMPACTOS</button>
+            </a>
+
+            <a href="index.html">
+            <button class="mod" style="background-color: #afafaf;">PROBABILIDADES</button>
+            </a>
+
+            <a href="tipos.html">
+            <button class="mod">TIPOS DE RIESGOS</button>
+            </a>
+
+            <a href="evaluacion.html">
+            <button class="mod">EVALUACIÓN DE RIESGOS</button>
+            </a>
+           
+        </div>
+
+        <div class="contenido" id="body">
+            <div class="contFormulario" id="popup">
+                <form id="formulario">
+                
+                <div class="titForm">
+                    <span class="tituloForm">Evaluación de riesgos</span>
+                </div>
+                
+                <div class="formularioInputs">
+                   <label for="">Descripción</label>
+                   <input type="text" class="descripcion" id="descripcion" >
+                   <label for="">Valor</label>
+                   <input type="text" class="valor" id="valor" >
+                </div>
+                <div class ="formularioBotones">
+                    <button type="submit" class="btn">Guardar</button>
+                    <button type="reset" class="btn" id="cancelar">Cancelar</button>
+                </div>
+                </form>
+            </div>
+
+                <div class="contTabla">
+                <table class="tabla">
+                    <div class="tituloBoton">
+                        <span class="titulo">PROBABILIDADES</span>
+                        <button id="nuevo">Nuevo</button>
+                    </div>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Descripción</th>
+                        <th>Valor</th>
+                        <th>Acción</th>
+                    </tr>
+
+                    <tbody id="tbody">
+                    <tr>
+                    </tr>
+                </tbody>
+                </table> 
+                </div>
+            </div>
+
+    </div>    
+
+    </main>
+<script src="JS/scriptProbabilidades.js"></script>
+</body>
+</html>
