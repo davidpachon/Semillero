@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    width: 100%;
+}
+.filt{
+    width: 40%;
+    height: 722px; 
+    background-color: white;
+}
+.logo{
+    display: flex;
+    width: 100%;
+    height: 113px; 
+}
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 113px;
+}
+.icono img{
+    width: 63px;
+    height: 63px;
+}
+.contTitulo{
+    color: #525252;
+    height: 113px;
+}
+.homologacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 61px;
+    font-size: 31px;
+}
+.directorio{
+    font-size: 20px;
+    height: 52px;
+    color: #487DAF;
+}
+.contenedorInput{
+    display: flex;
+    flex-direction: column;
+    margin-left: 27px;
+}
+.nivel{
+    font-size: 27px;
+}
+.contInput{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 51px;
+}
+.contInput input{
+    border: transparent;
+    width: 100%;
+    height: 41px;
+    border-radius: 10px;
+    border:solid 1px #C4C4C4;
+}
+#lista{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 35px;
+    overflow: auto;
+    height: 350px;
+}
+.contenedorDatos{
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+}
+.descripcion, .cantidad{
+    display: flex;
+    font-size: 20px;
+}
+.cantidad{
+    color: #525252;
+    margin-right: 20px;
+}
+.contenedorDatos:hover{
+    background-color: #DEEAFF;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.contenedorTabla{
+    display: flex;
+    width: 60%;
+    margin-left: 20px;
+    background-color: white;
+    flex-direction: column;
+    height: 722px;
+    overflow: auto;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+}
+.seleccionar, .desseleccionar{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 200px;
+    color: #3871A7;
+}
+.desseleccionar{
+    margin-top: 1%;
+}
+.desseleccionar span{
+    margin-top: 2.5%;
+    margin-left: 3%;
+}
+#seleccionar{
+    background-color: transparent;
+    background-image: url(images/marcar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38.5px;
+    height: 41.5px;
+    border: transparent;
+    margin-right: 2%;
+}
+#desseleccionar{
+    background-color: transparent;
+    background-image: url(images/desmarcar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 27px;
+    height: 28px;
+    border: transparent;
+    margin-right: 2%;
+}
+table{
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    border-collapse: collapse;
+    overflow: auto;
+}
+tr{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+tr input{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 22px;
+}
+tr .puta:checked{
+    background-color: red;
+}
+tr td:nth-child(2){
+    margin-left: 2%;
+}
+td{
+    margin-top: 20px;
+    width: 350px;
+    height: 60px;
+}
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 180px;
+}
+.contenedorDatos.mostrar{
+    display: flex;
+}
+.contenedorDatos{
+    display: none;
+}
