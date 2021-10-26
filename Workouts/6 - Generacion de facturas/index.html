@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Generación de facturación</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cargador">
+        <div class="loader1"></div>
+        <div class="loader2"></div>
+    </div>
+
+    <header>
+            <div class="tituloInfo">
+                <h1>Generación de facturas</h1>
+                <img src="images/icono informacion.svg">
+            </div>
+            <div class="barraAzul">
+                <span>Buscar órdenes de facturación</span>
+            </div>
+    </header>
+
+        <main id="main">
+            <div id="ocultarInputs">
+                <div class="contenedorInputs">
+                    <div class="input">
+                        <img src="images/calendario.svg">
+                        <div class="tituloInput">
+                            <span>Fecha Inicial</span>
+                            <input type="date" id="fechaInicial">
+                        </div>
+                    </div>    
+
+                    <div class="input">
+                        <img src="images/calendario.svg">
+                        <div class="tituloInput">
+                            <span>Fecha final</span>
+                            <input type="date" id="fechaFinal">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedorInputs">
+                    <div class="input">
+                        <img src="images/icono orden de facturacion.svg">
+                        <div class="tituloInput">
+                            <span>Órden de facturación</span>
+                            <input type="number" placeholder="Número de orden de facturación" id="orden">
+                        </div>
+                    </div>    
+
+                    <div class="input">
+                        <img src="images/icono cliente.svg">
+                        <div class="tituloInput">
+                            <span>Cliente</span>
+                            <input type="text" placeholder="Buscar el cliente" id="cliente">
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <img src="images/icono modelo de negocio.svg">
+                        <div class="tituloInput">
+                            <span>Modelo de negocios</span>
+                            <select id="modelo">
+                                <option disabled selected>Seleccione modelo de negocio</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedorInputs">
+                    <div class="input">
+                        <img src="images/icono moneda.svg">
+                        <div class="tituloInput">
+                            <span>Moneda</span>
+                            <select id="monedas">
+                            </select>
+                        </div>
+                    </div>
+
+                        <button class="boton" id="boton">Consultar</button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>     
+        </main>
+        <div class="barraAzul">
+            <span>Órdenes de facturación</span>
+        </div>
+        <footer id="footer">
+        <div id="ocultarFooter">
+            <img src="images/icono mano fondo.svg">
+            <span>Ingrese los filtros para consultar las órdenes de facturación</span>
+        </div>
+        <table id="tabla"></table>
+        </footer>
+        <div class="contenedorFlotante" id="contenedorFlotante"></div>
+<script src="script.js"></script>
+</body>
+</html>
