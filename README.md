@@ -1,1 +1,1 @@
-Se me ha dificultado muchas cosas pero no hay nada que no se pueda investigar o hacerlo de una manera que si conozca
+He sentido un gran avance mediante el tiempo que he estado en la empresa, los métodos de enseñanza han sido asertivos, y he sentido un avance notable de cómo había aprendido en un comienzo. 
