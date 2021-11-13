@@ -1,0 +1,1 @@
+Para este trabajo al comienzo tenía una idea de cómo hacerlo, pero tuve varios vacíos a lo que decidí ver un video de youtube y pude completar el proyecto.
